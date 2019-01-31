@@ -24,9 +24,24 @@ Can be a bit challenging to use directly
 
 Emscripten - easier tool, uses LLVM under the hood
 
+Currently, functions in WebAssembly can only use numbers (integers or floating point numbers) as parameters or return values.
+For any data types that are more complex, like strings, you have to use the WebAssembly module’s memory.
+(Things start getting trickier for those unfamiliar with memory management). 
+This process is similar to memory management in languages like C, C++.
+
+WebAssembly is faster than JavaScript in many cases because:
+
+fetching WebAssembly takes less time because it is more compact than JavaScript, even when compressed.
+decoding WebAssembly takes less time than parsing JavaScript.
+compiling and optimizing takes less time because WebAssembly is closer to machine code than JavaScript and already has gone through optimization on the server side.
+reoptimizing doesn’t need to happen because WebAssembly has types and other information built in, so the JS engine doesn’t need to speculate when it optimizes the way it does with JavaScript.
+executing often takes less time because there are fewer compiler tricks and gotchas that the developer needs to know to write consistently performant code, plus WebAssembly’s set of instructions are more ideal for machines.
+garbage collection is not required since the memory is managed manually.
+
 Article links
 https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-web-assembly-6cb6466a3478
 https://hacks.mozilla.org/2017/02/creating-and-working-with-webassembly-modules/
+https://medium.freecodecamp.org/get-started-with-webassembly-using-only-14-lines-of-javascript-b37b6aaca1e4
 
 Video
 https://www.youtube.com/watch?v=6v4E6oksar0&feature=youtu.be&t=31m55s
