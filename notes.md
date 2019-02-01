@@ -15,7 +15,7 @@ could even think of WebAssembly as just a JavaScript feature for efficiently gen
 
 (MDN)
 
-!Note: Most WebAssembly module developers will code in languages like C and Rust and then compile to WebAssembly, 
+!Note: You are not supposed to write in Web Assembly. Most WebAssembly module developers will code in languages like C and Rust and then compile to WebAssembly, 
 but there are other ways to create a WebAssembly module. For example, there is an experimental (early-stage) tool that helps you 
 build a WebAssembly module using TypeScript, or you can code in the text representation of WebAssembly directly.
 
@@ -38,6 +38,8 @@ reoptimizing doesn’t need to happen because WebAssembly has types and other in
 executing often takes less time because there are fewer compiler tricks and gotchas that the developer needs to know to write consistently performant code, plus WebAssembly’s set of instructions are more ideal for machines.
 garbage collection is not required since the memory is managed manually.
 
+Current Web Assembly runs at 1.2x speed of the native code.
+
 Article links
 https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-web-assembly-6cb6466a3478
 https://hacks.mozilla.org/2017/02/creating-and-working-with-webassembly-modules/
@@ -57,3 +59,6 @@ https://webassembly.org/demo/Tanks/
 
 WebAssembly modules using TS
 https://github.com/rsms/wasm-util
+
+Online video editor
+https://d2jta7o2zej4pf.cloudfront.net/
