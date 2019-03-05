@@ -1,0 +1,22 @@
+{
+  "name": "web-assembly-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majakudlicka/Web-Assembly-Playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majakudlicka/Web-Assembly-Playground/issues"
+  },
+  "homepage": "https://github.com/majakudlicka/Web-Assembly-Playground#readme",
+  "dependencies": {
+    "wasm-arrays": "1.0.2"
+  }
+}
